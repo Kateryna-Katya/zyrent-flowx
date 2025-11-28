@@ -1,56 +1,544 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test-two/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Zyrent-Flowx — разработка ботов и AI-ассистентов. Технология нового поколения для автоматизации.">
+  <title>Zyrent-Flowx | Разработка ботов и AI</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="./favicon.png">
+    <script type="module" crossorigin src="/test-two/assets/main-DlqupSq0.js"></script>
+    <link rel="stylesheet" crossorigin href="/test-two/assets/main-CCJSuBWf.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      Zyrent-Flowx
+    </a>
+
+    <nav class="header__nav" id="headerNav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#types" class="header__link">Типы ботов</a></li>
+        <li class="header__item"><a href="#ai-solutions" class="header__link">AI Решения</a></li>
+        <li class="header__item"><a href="#quiz-section" class="header__link">Тест</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">О блоге</a></li>
       </ul>
+      <a href="#contact" class="header__btn btn">Связаться</a>
     </nav>
+
+    <button class="header__burger" id="burgerBtn" aria-label="Меню">
+      <i data-lucide="menu"></i>
+    </button>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="hero__badge">Технология нового поколения</span>
+            <h1 class="hero__title">
+                Воплотите мечты в реальность с умными <span class="text-highlight">AI-ботами</span>
+            </h1>
+            <p class="hero__text">
+Разработка ботов — от простых чатов до продвинутых AI-ассистентов. Платформа уже доступна в Европе и обеспечивает
+быстрый и удобный старт для вашего бизнеса.
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn hero__btn">Узнать детали</a>
+                <a href="#types" class="btn btn--outline">Оценить перспективы</a>
+            </div>
+            <p class="hero__note">* Предложение активно только в странах ЕС</p>
+        </div>
+
+        <div class="hero__visual">
+            <div class="hero__shape hero__shape--1"></div>
+            <div class="hero__shape hero__shape--2"></div>
+            <div class="hero__img-wrapper">
+                <img src="/test-two/assets/one-YRMa95pd.jpg" alt="AI Assistant Interface" class="hero__img">
+                <div class="hero__card hero__card--1">
+                    <i data-lucide="message-square"></i>
+                    <span>Онлайн регистрация</span>
+                </div>
+                <div class="hero__card hero__card--2">
+                    <i data-lucide="zap"></i>
+                    <span>Эффективность +200%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" id="ai-solutions">
+    <div class="container">
+        <div class="section__header scroll-anim">
+            <span class="section__subtitle">Инновационная технология</span>
+            <h2 class="section__title">Решения для <span class="text-highlight">масштабирования</span></h2>
+            <p class="section__desc">
+                Мы создаем ботов, которые помогают бизнесу оценить перспективы проекта и автоматизировать рутину.
+            </p>
+        </div>
+
+        <div class="grid grid--2">
+            <div class="card scroll-anim">
+                <div class="card__icon-box">
+                    <i data-lucide="bot"></i>
+                </div>
+                <h3 class="card__title">AI-Консультанты</h3>
+                <p class="card__text">
+                    Умные ассистенты на базе LLM. Они понимают контекст, обучаются на ваших данных и работают 24/7.
+                </p>
+                <a href="#contact" class="card__link">Начать работу <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="card scroll-anim">
+                <div class="card__icon-box">
+                    <i data-lucide="shopping-cart"></i>
+                </div>
+                <h3 class="card__title">E-commerce Боты</h3>
+                <p class="card__text">
+                    Полноценный магазин внутри мессенджера. Каталог, корзина и оплата в пару кликов.
+                </p>
+                <a href="#contact" class="card__link">Начать работу <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="card scroll-anim">
+                <div class="card__icon-box">
+                    <i data-lucide="users"></i>
+                </div>
+                <h3 class="card__title">HR и Рекрутинг</h3>
+                <p class="card__text">
+                    Автоматический скрининг кандидатов и онбординг сотрудников. Легко разобраться без опыта.
+                </p>
+                <a href="#contact" class="card__link">Начать работу <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="card scroll-anim">
+                <div class="card__icon-box">
+                    <i data-lucide="bar-chart-2"></i>
+                </div>
+                <h3 class="card__title">Лидогенерация</h3>
+                <p class="card__text">
+                    Сбор заявок и прогрев аудитории. Технология нового поколения для роста вашей базы.
+                </p>
+                <a href="#contact" class="card__link">Начать работу <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="features">
+    <div class="container">
+        <div class="section__header scroll-anim">
+            <span class="section__subtitle">Почему Zyrent-Flowx?</span>
+            <h2 class="section__title">Ваш <span class="text-highlight">проверенный партнер</span></h2>
+        </div>
+
+        <div class="grid grid--3">
+            <div class="feature scroll-anim">
+                <i data-lucide="zap" class="feature__icon"></i>
+                <h4 class="feature__title">Быстрый и легкий старт</h4>
+                <p class="feature__text">
+                    Подключение занимает 2 минуты. Мы берем на себя всю техническую часть.
+                </p>
+            </div>
+
+            <div class="feature scroll-anim">
+                <i data-lucide="shield-check" class="feature__icon"></i>
+                <h4 class="feature__title">Гарантия качества</h4>
+                <p class="feature__text">
+                    Бесплатная консультация по всем вопросам и полная техподдержка после запуска.
+                </p>
+            </div>
+
+            <div class="feature scroll-anim">
+                <i data-lucide="trending-up" class="feature__icon"></i>
+                <h4 class="feature__title">Пассивный доход</h4>
+                <p class="feature__text">
+                    Настройте один раз — получайте результат постоянно. Идеальная программа пассивного дохода для
+                    бизнеса.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="types">
+    <div class="container">
+        <div class="section__header scroll-anim">
+            <span class="section__subtitle">Платформы</span>
+            <h2 class="section__title">Где живут наши <span class="text-highlight">боты</span>?</h2>
+            <p class="section__desc">Расширить горизонты проекта можно на любой популярной площадке.</p>
+        </div>
+
+        <div class="platforms-grid">
+            <div class="platform-card scroll-anim">
+                <div class="platform-card__icon"><i data-lucide="send"></i></div>
+                <h3 class="platform-card__title">Telegram Боты</h3>
+                <p class="platform-card__desc">Идеально для продаж и рассылок. Полная автоматизация внутри мессенджера.
+                </p>
+            </div>
+            <div class="platform-card scroll-anim">
+                <div class="platform-card__icon"><i data-lucide="globe"></i></div>
+                <h3 class="platform-card__title">Web-Widget</h3>
+                <p class="platform-card__desc">Умный чат на вашем сайте. Поддерживает клиентов 24/7 без выходных.</p>
+            </div>
+            <div class="platform-card scroll-anim">
+                <div class="platform-card__icon"><i data-lucide="instagram"></i></div>
+                <h3 class="platform-card__title">Instagram Direct</h3>
+                <p class="platform-card__desc">Автоответы на сторис и комментарии. Лидогенерация на автомате.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="cases">
+    <div class="container">
+        <div class="section__header scroll-anim">
+            <span class="section__subtitle">Кейсы</span>
+            <h2 class="section__title">Наши  <span class="text-highlight">работы</span></h2>
+            <p class="section__desc">Как наши клиенты смогли воплотить мечты в реальность.</p>
+        </div>
+
+        <div class="grid grid--3">
+            <article class="blog-card scroll-anim">
+                <div class="blog-card__image">
+                    <img src="/test-two/assets/two-De29SZ7f.jpg" alt="Кейс логистика">
+                    <span class="blog-card__tag">Логистика</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Автоматизация таксопарка: +40% к заказам</h3>
+                    <p class="blog-card__excerpt">Вдрили AI-диспетчера, который обрабатывает заявки за 2 секунды.</p>
+                    <a href="#" class="blog-card__link">Погрузиться в детали <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card scroll-anim">
+                <div class="blog-card__image">
+                    <img src="/test-two/assets/three-8Ba6FCdt.jpg" alt="Кейс онлайн школа">
+                    <span class="blog-card__tag">EdTech</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Онлайн школа: продажи без менеджеров</h3>
+                    <p class="blog-card__excerpt">Бот проводит тестирование учеников и продает курс. Платформа года в
+                        EdTech.</p>
+                    <a href="#" class="blog-card__link">Узнать больше <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card scroll-anim">
+                <div class="blog-card__image">
+                    <img src="/test-two/assets/four-QkxLoRnA.jpg" alt="Кейс недвижимость">
+                    <span class="blog-card__tag">Недвижимость</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Риелторский бот: подбор квартир</h3>
+                    <p class="blog-card__excerpt">Клиент получает подборку вариантов сразу после опроса. Быстрый и
+                        легкий старт продаж.</p>
+                    <a href="#" class="blog-card__link">Читать кейс <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="section" id="blog">
+    <div class="container">
+        <div class="section__header scroll-anim">
+            <span class="section__subtitle">База знаний</span>
+            <h2 class="section__title">Новости и <span class="text-highlight">инсайты</span></h2>
+            <div class="slider-controls">
+                <p class="section__desc" style="margin-bottom: 0;">
+                    Последние тренды. Тяните влево, чтобы увидеть больше <i data-lucide="arrow-right"
+                        style="display:inline; width:16px;"></i>
+                </p>
+                <div class="swiper-nav-btns">
+                    <button class="swiper-button-prev-custom"><i data-lucide="chevron-left"></i></button>
+                    <button class="swiper-button-next-custom"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper blogSwiper scroll-anim">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="Пассивный доход">
+                            <span class="article-card__category">Бизнес</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>27 Ноя</span> <span class="dot">•</span> <span>5
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">Пассивный доход через
+                                    Telegram-бота</a></h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="AI Тренды">
+                            <span class="article-card__category">Тренды</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>26 Ноя</span> <span class="dot">•</span> <span>3
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">LLM модели: зачем это бизнесу в
+                                    ЕС?</a></h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="Безопасность">
+                            <span class="article-card__category">GDPR</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>20 Ноя</span> <span class="dot">•</span> <span>7
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">Как легально собирать лиды в
+                                    Европе</a></h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="E-commerce">
+                            <span class="article-card__category">Продажи</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>18 Ноя</span> <span class="dot">•</span> <span>4
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">Автоворонка в Instagram за 1 день</a>
+                            </h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="Кейс">
+                            <span class="article-card__category">Кейсы</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>15 Ноя</span> <span class="dot">•</span> <span>6
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">Как бот заменил HR-отдел</a></h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="article-card">
+                        <div class="article-card__img-box">
+                            <img src="/test-two/assets/five-CISku-2T.png" alt="Dev">
+                            <span class="article-card__category">Разработка</span>
+                        </div>
+                        <div class="article-card__body">
+                            <div class="article-card__meta"><span>10 Ноя</span> <span class="dot">•</span> <span>8
+                                    мин</span></div>
+                            <h3 class="article-card__title"><a href="#contact">No-Code vs Кастомная разработка</a>
+                            </h3>
+                            <a href="#contact" class="article-card__link">Читать <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="quiz-section">
+    <div class="container">
+        <div class="quiz-wrapper scroll-anim">
+            <div class="quiz-content">
+                <h2 class="quiz-title">Какой бот подойдет вам?</h2>
+                <p class="quiz-desc">Пройти опрос и получить рекомендацию (займет 30 секунд).</p>
+
+                <div id="quiz-container">
+                    <div class="quiz-step active" data-step="1">
+                        <p class="quiz-question">1. Какова главная цель внедрения?</p>
+                        <div class="quiz-options">
+                            <button class="btn btn--outline quiz-opt">Снизить нагрузку на поддержку</button>
+                            <button class="btn btn--outline quiz-opt">Увеличить продажи</button>
+                            <button class="btn btn--outline quiz-opt">Автоматизация рутины</button>
+                        </div>
+                    </div>
+                    <div class="quiz-step" data-step="2">
+                        <p class="quiz-question">2. Где находится ваша аудитория?</p>
+                        <div class="quiz-options">
+                            <button class="btn btn--outline quiz-opt">В мессенджерах</button>
+                            <button class="btn btn--outline quiz-opt">На сайте</button>
+                            <button class="btn btn--outline quiz-opt">В соцсетях</button>
+                        </div>
+                    </div>
+                    <div class="quiz-step" data-step="3">
+                        <div class="quiz-result">
+                            <i data-lucide="check-circle"></i>
+                            <h3>Отлично! Мы подобрали решение.</h3>
+                            <p>Запишитесь на консультацию, чтобы получить стратегию.</p>
+                            <a href="#contact" class="btn">Получить стратегию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--dark" id="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info scroll-anim">
+                <span class="contact-badge">Связаться с нами</span>
+                <h2 class="contact-title">Готовы начать?</h2>
+                <p class="contact-desc">
+                    Заполните форму для начала сотрудничества. Доступ к платформе открыт, мы свяжемся с вами в течение
+                    часа.
+                </p>
+                <ul class="contact-list">
+                    <li><i data-lucide="check"></i> Бесплатная консультация</li>
+                    <li><i data-lucide="check"></i> Аудит вашего проекта</li>
+                    <li><i data-lucide="check"></i> Персональное предложение</li>
+                </ul>
+            </div>
+
+            <form class="contact-form scroll-anim" id="mainForm">
+                <h3 class="form-title">Онлайн регистрация заявки</h3>
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" id="name" class="form-input" placeholder="Иван Иванов" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Телефон</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="+49..." required>
+                </div>
+
+                <div class="form-group captcha-group">
+                    <label for="captcha" class="form-label">Сколько будет <span id="captcha-question"></span>?</label>
+                    <input type="number" id="captcha" class="form-input" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Я согласен с <a href="terms.html">условиями использования</a> и <a
+                            href="privacy.html">политикой конфиденциальности</a>.</label>
+                </div>
+
+                <button type="submit" class="btn btn--full">Отправить заявку</button>
+
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#" class="footer__logo">Zyrent-Flowx</a>
+        <p class="footer__desc">
+          Инновационная технология разработки чат-ботов и AI-ассистентов.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Главная</a></li>
+          <li><a href="#types" class="footer__link">Типы ботов</a></li>
+          <li><a href="#ai-solutions" class="footer__link">AI Решения</a></li>
+          <li><a href="#quiz-section" class="footer__link">Онлайн тест</a></li>
+          <li><a href="#blog" class="footer__link">О блоге</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html" class="footer__link">Политика конфиденциальности</a></li>
+          <li><a href="cookies.html" class="footer__link">Политика Cookies</a></li>
+          <li><a href="terms.html" class="footer__link">Условия использования</a></li>
+          <li><a href="return.html" class="footer__link">Политика возврата</a></li>
+          <li><a href="disclaimer.html" class="footer__link">Отказ от ответственности</a></li>
+          <li><a href="personal-data-policy.html" class="footer__link">Обработка персональных данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li class="footer__contact-item">
+            <i data-lucide="phone" class="footer__icon"></i>
+            <span>+49 30 84729105</span>
+          </li>
+          <li class="footer__contact-item">
+            <i data-lucide="mail" class="footer__icon"></i>
+            <a href="mailto:connect@zyrent-flowx.click">connect@zyrent-flowx.click</a>
+          </li>
+          <li class="footer__contact-item">
+            <i data-lucide="map-pin" class="footer__icon"></i>
+            <span>Torstraße 142, 10119 Berlin, Germany</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Zyrent-Flowx. Все права защищены. Предложение активно только в странах ЕС.</p>
+    </div>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+        <p class="cookie-text">
+          Этот сайт использует cookies для улучшения работы и анализа трафика.
+          Подробнее — в нашей <a href="cookies.html">Cookie политике</a>.
+        </p>
+        <button id="acceptCookie" class="btn btn--sm">Принять</button>
+      </div>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
